@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mystique Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-dark: #1a1333;
+        --primary-light: #f5f3ff;
+        --accent-gold: #e6c97a;
+        --accent-purple: #7c3aed;
+        --text-light: #fff;
+        --text-dark: #222;
+        --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      body {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        background: var(--primary-dark);
+        color: var(--text-light);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        transition: background var(--transition), color var(--transition);
+      }
+      .container {
+        width: 100%;
+        max-width: 480px;
+        margin: 2rem auto;
+        background: rgba(30, 20, 60, 0.95);
+        border-radius: 1.5rem;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        padding: 2rem 1.5rem 2.5rem 1.5rem;
+        position: relative;
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+      }
+      .logo img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        box-shadow: 0 0 24px 0 var(--accent-gold);
+        background: #2d1a3a;
+      }
+      .lang-switch {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.5rem;
+        display: flex;
+        gap: 0.5rem;
+      }
+      .lang-btn {
+        background: none;
+        border: 2px solid var(--accent-gold);
+        color: var(--accent-gold);
+        font-weight: 700;
+        border-radius: 1rem;
+        padding: 0.2rem 0.9rem;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background var(--transition), color var(--transition);
+      }
+      .lang-btn.active,
+      .lang-btn:hover {
+        background: var(--accent-gold);
+        color: var(--primary-dark);
+      }
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.03em;
+      }
+      .subtitle {
+        text-align: center;
+        color: var(--accent-gold);
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+      }
+      .policy {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+      }
+      .stars {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+      }
+      .theme-toggle {
+        position: absolute;
+        top: 1.2rem;
+        left: 1.5rem;
+        background: none;
+        border: none;
+        color: var(--accent-gold);
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: color var(--transition);
+      }
+      @media (max-width: 600px) {
+        .container {
+          padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+        }
+        .logo img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+      body.light {
+        background: var(--primary-light);
+        color: var(--text-dark);
+      }
+      body.light .container {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 8px 32px 0 rgba(124, 58, 237, 0.13);
+      }
+      body.light .lang-btn {
+        border-color: var(--accent-purple);
+        color: var(--accent-purple);
+      }
+      body.light .lang-btn.active,
+      body.light .lang-btn:hover {
+        background: var(--accent-purple);
+        color: var(--primary-light);
+      }
+      body.light .subtitle {
+        color: var(--accent-purple);
+      }
+      body.light .theme-toggle {
+        color: var(--accent-purple);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+        🌙
+      </button>
+      <div class="lang-switch">
+        <button class="lang-btn active" id="enBtn">EN</button>
+        <button class="lang-btn" id="trBtn">TR</button>
+      </div>
+      <div class="logo">
+        <img src="logo.jpg" alt="Mystique Logo" />
+      </div>
+      <h1>Mystique</h1>
+      <div class="subtitle" id="subtitle">Privacy Policy</div>
+      <div class="policy" id="policy-en">
+        <strong>Privacy Policy</strong><br /><br />
+        Welcome to Mystique! Your privacy is important to us. This policy
+        explains how we collect, use, and protect your information.<br /><br />
+        <strong>1. Information We Collect</strong><br />
+        - Photos you upload (coffee cup, palm, tarot cards) for AI
+        interpretation<br />
+        - Profile details (name, birth date, zodiac sign, email, etc.)<br />
+        - Usage data (app activity, device info, etc.)<br /><br />
+        <strong>2. How We Use Your Data</strong><br />
+        - To provide personalized fortune readings and daily guidance<br />
+        - To improve app features and user experience<br />
+        - To send notifications (if enabled)<br /><br />
+        <strong>3. Data Security</strong><br />
+        - All photos and data are securely transmitted and stored<br />
+        - We do not share your data with third parties without consent<br /><br />
+        <strong>4. Your Rights</strong><br />
+        - You can view, edit, or delete your data anytime in the app<br />
+        - You can request account deletion via the app settings<br /><br />
+        <strong>5. Contact</strong><br />
+        For questions, contact us via the in-app support or at
+        <a href="mailto:support@mystique.app">support@mystique.app</a
+        >.<br /><br />
+        <em>This policy may be updated. Please check regularly for changes.</em>
+      </div>
+      <div class="policy" id="policy-tr" style="display: none">
+        <strong>Gizlilik Politikası</strong><br /><br />
+        Mystique'e hoş geldiniz! Gizliliğiniz bizim için önemlidir. Bu politika,
+        bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu
+        açıklar.<br /><br />
+        <strong>1. Toplanan Bilgiler</strong><br />
+        - Yorum için yüklediğiniz fotoğraflar (kahve fincanı, avuç içi, tarot
+        kartları)<br />
+        - Profil bilgileri (isim, doğum tarihi, burç, e-posta vb.)<br />
+        - Kullanım verileri (uygulama etkinliği, cihaz bilgisi vb.)<br /><br />
+        <strong>2. Verilerin Kullanımı</strong><br />
+        - Kişiselleştirilmiş fal ve günlük rehberlik sunmak için<br />
+        - Uygulama özelliklerini ve deneyimini geliştirmek için<br />
+        - Bildirim göndermek için (açık ise)<br /><br />
+        <strong>3. Veri Güvenliği</strong><br />
+        - Tüm fotoğraf ve veriler güvenli şekilde iletilir ve saklanır<br />
+        - Verileriniz izniniz olmadan üçüncü kişilerle paylaşılmaz<br /><br />
+        <strong>4. Haklarınız</strong><br />
+        - Verilerinizi uygulama üzerinden görüntüleyebilir, düzenleyebilir veya
+        silebilirsiniz<br />
+        - Hesap silme talebinizi ayarlardan iletebilirsiniz<br /><br />
+        <strong>5. İletişim</strong><br />
+        Sorularınız için uygulama içi destekten veya
+        <a href="mailto:support@mystique.app">support@mystique.app</a>
+        adresinden bize ulaşabilirsiniz.<br /><br />
+        <em
+          >Bu politika güncellenebilir. Lütfen düzenli olarak kontrol edin.</em
+        >
+      </div>
+    </div>
+    <canvas class="stars"></canvas>
+    <script>
+      // Language switcher
+      const enBtn = document.getElementById("enBtn");
+      const trBtn = document.getElementById("trBtn");
+      const policyEn = document.getElementById("policy-en");
+      const policyTr = document.getElementById("policy-tr");
+      const subtitle = document.getElementById("subtitle");
+      enBtn.onclick = () => {
+        enBtn.classList.add("active");
+        trBtn.classList.remove("active");
+        policyEn.style.display = "";
+        policyTr.style.display = "none";
+        subtitle.textContent = "Privacy Policy";
+      };
+      trBtn.onclick = () => {
+        trBtn.classList.add("active");
+        enBtn.classList.remove("active");
+        policyEn.style.display = "none";
+        policyTr.style.display = "";
+        subtitle.textContent = "Gizlilik Politikası";
+      };
+
+      // Theme toggle
+      const themeToggle = document.getElementById("themeToggle");
+      let isDark = true;
+      themeToggle.onclick = () => {
+        isDark = !isDark;
+        document.body.classList.toggle("light", !isDark);
+        themeToggle.textContent = isDark ? "🌙" : "💎";
+      };
+
+      // Animated stars (for mystical effect)
+      const canvas = document.querySelector(".stars");
+      const ctx = canvas.getContext("2d");
+      let w, h, stars;
+      function resize() {
+        w = canvas.width = window.innerWidth;
+        h = canvas.height = window.innerHeight;
+        stars = Array.from({ length: 60 }, () => ({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          r: Math.random() * 1.2 + 0.5,
+          o: Math.random() * 0.5 + 0.5,
+          d: Math.random() * 0.02 + 0.01,
+        }));
+      }
+      function draw() {
+        ctx.clearRect(0, 0, w, h);
+        for (const s of stars) {
+          ctx.globalAlpha = s.o;
+          ctx.beginPath();
+          ctx.arc(s.x, s.y, s.r, 0, 2 * Math.PI);
+          ctx.fillStyle = isDark ? "#fffbe6" : "#7c3aed";
+          ctx.shadowColor = isDark ? "#e6c97a" : "#7c3aed";
+          ctx.shadowBlur = 8;
+          ctx.fill();
+          ctx.shadowBlur = 0;
+        }
+      }
+      function animate() {
+        for (const s of stars) {
+          s.o += (Math.random() - 0.5) * 0.01;
+          s.o = Math.max(0.3, Math.min(1, s.o));
+          s.x += Math.sin(s.d) * 0.2;
+          s.y += Math.cos(s.d) * 0.2;
+          if (s.x < 0) s.x = w;
+          if (s.x > w) s.x = 0;
+          if (s.y < 0) s.y = h;
+          if (s.y > h) s.y = 0;
+        }
+        draw();
+        requestAnimationFrame(animate);
+      }
+      window.addEventListener("resize", resize);
+      resize();
+      animate();
+    </script>
+  </body>
+</html>
